@@ -32,10 +32,9 @@ Background:
     Examples:
     |sheetName|rowNumber|
 	  |PostRequestData|0|
-	  |PostRequestData|1|
+	 
 
     Scenario: 
-
    	Given User Creates a DELETE request  with an empty User First Name as "".
     When User sends the DELETE request to valid endpoint with user firstname
     Then The delete response should contain a status code as 400.

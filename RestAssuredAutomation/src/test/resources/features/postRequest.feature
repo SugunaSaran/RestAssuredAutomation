@@ -129,6 +129,7 @@ Background:
 	 Examples:
 	 |sheetname|rownumber|
 	 |PostRequestData|0|
+	 |PostRequestData|1|
 	
 	  @invalid 
 	 Scenario Outline:  Validating the new user creation with invalid user email id
