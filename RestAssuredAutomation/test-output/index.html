@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 10 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-CucumberSuite" class="navigator-link">
+              <span class="suite-name border-failed">CucumberSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-CucumberSuite" class="navigator-link ">
+                    <span>C:\Users\SMILE\selenium_course\RestAssuredAutomation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-CucumberSuite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-CucumberSuite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-CucumberSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-CucumberSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-CucumberSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-CucumberSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">60 methods, 10 failed,   50 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-CucumberSuite" class="hide-methods failed suite-CucumberSuite"> (hide)</a> <!-- hide-methods failed suite-CucumberSuite -->
+                      <a href="#" panel-name="suite-CucumberSuite" class="show-methods failed suite-CucumberSuite"> (show)</a> <!-- show-methods failed suite-CucumberSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-CucumberSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.validRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the updation of user with all field values&quot;, &quot;Put Request with Authorization&quot;)">runScenario("Validating the updation of user with all field values", "Put Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.validRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if the User is able to retrieve a user by User First Name with Authorization.&quot;, &quot;Get Request ...)">runScenario("Check if the User is able to retrieve a user by User First Name with Authorization.", "Get Request ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with only mandatory field values&quot;, &quot;Post Request with Authorizatio...)">runScenario("Validating the new user creation with only mandatory field values", "Post Request with Authorizatio...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of missing user last name field&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of missing user last name field", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of missing user First name field&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of missing user First name field", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with invalid user last name&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with invalid user last name", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with only mandatory field values&quot;, &quot;Post Request with Authorizatio...)">runScenario("Validating the new user creation with only mandatory field values", "Post Request with Authorizatio...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if the User is able to delete a user by User First Name with Authorization.&quot;, &quot;Get Request wi...)">runScenario("Check if the User is able to delete a user by User First Name with Authorization.", "Get Request wi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of missing user First name field&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of missing user First name field", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with invalid user last name&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with invalid user last name", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-CucumberSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-CucumberSuite" class="hide-methods passed suite-CucumberSuite"> (hide)</a> <!-- hide-methods passed suite-CucumberSuite -->
+                      <a href="#" panel-name="suite-CucumberSuite" class="show-methods passed suite-CucumberSuite"> (show)</a> <!-- show-methods passed suite-CucumberSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-CucumberSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.NoAuthScenarios" class="method navigator-link" hash-for-method="runScenario(&quot;Check if the User is able to retrieve a user by User First Name without Authorization.&quot;, &quot;Checking ...)">runScenario("Check if the User is able to retrieve a user by User First Name without Authorization.", "Checking ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.NoAuthScenarios" class="method navigator-link" hash-for-method="runScenario(&quot;Getting all users list without Authorization&quot;, &quot;Checking different requests without Authorization&quot;)">runScenario("Getting all users list without Authorization", "Checking different requests without Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.NoAuthScenarios" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with all field values without Authorization&quot;, &quot;Checking different ...)">runScenario("Validating the new user creation with all field values without Authorization", "Checking different ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.NoAuthScenarios" class="method navigator-link" hash-for-method="runScenario(&quot;Check if the User is able to retrieve a user by User ID without Authorization&quot;, &quot;Checking different...)">runScenario("Check if the User is able to retrieve a user by User ID without Authorization", "Checking different...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserCreationRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with all field values&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with all field values", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserCreationRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the user creation with valid zipcode in userAddress&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the user creation with valid zipcode in userAddress", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.validRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check  If the get request is able to retrieve  a user by an empty User ID.&quot;, &quot;Get Request with Auth...)">runScenario("Check  If the get request is able to retrieve  a user by an empty User ID.", "Get Request with Auth...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.validRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if the User is able to retrieve a user by User ID with Authorization.&quot;, &quot;Get Request with Aut...)">runScenario("Check if the User is able to retrieve a user by User ID with Authorization.", "Get Request with Aut...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.validRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Getting all users list without an endpoint&quot;, &quot;Get Request with Authorization&quot;)">runScenario("Getting all users list without an endpoint", "Get Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User FirstName.&quot;, &quot;Get Reques...)">runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User ID.&quot;, &quot;Get Request with ...)">runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if the User is able to delete a user by chaining User ID with Authorization.&quot;, &quot;Get Request w...)">runScenario("Check if the User is able to delete a user by chaining User ID with Authorization.", "Get Request w...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of duplicate user contact number while updating the record&quot;, &quot;Put Request with Authoriza...)">runScenario("Validation of duplicate user contact number while updating the record", "Put Request with Authoriza...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of contact number field with empty string&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of contact number field with empty string", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the user creation with invalid country in userAddress&quot;, &quot;Post Request with Authorization...)">runScenario("Validating the user creation with invalid country in userAddress", "Post Request with Authorization...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of user First name field with empty string&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of user First name field with empty string", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with invalid user first name&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with invalid user first name", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of missing user user email id field&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of missing user user email id field", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of email id field with empty string&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of email id field with empty string", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the user creation with invalid plotNumber in userAddress&quot;, &quot;Post Request with Authorizat...)">runScenario("Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorizat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with all field values to an invalid endpoint&quot;, &quot;Post Request with ...)">runScenario("Validating the new user creation with all field values to an invalid endpoint", "Post Request with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with invalid user email id&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with invalid user email id", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of duplicate user email id while updating the record&quot;, &quot;Put Request with Authorization&quot;)">runScenario("Validation of duplicate user email id while updating the record", "Put Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check if the User is able to delete a user by User First Name with Authorization.&quot;, &quot;Get Request wi...)">runScenario("Check if the User is able to delete a user by User First Name with Authorization.", "Get Request wi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with invalid user first name&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with invalid user first name", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with invalid user email id&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with invalid user email id", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with all field values with invalid JSON&quot;, &quot;Post Request with Autho...)">runScenario("Validating the new user creation with all field values with invalid JSON", "Post Request with Autho...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;&quot;, &quot;Get Request with Authorization&quot;)">runScenario("", "Get Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the user creation with invalid plotNumber in userAddress&quot;, &quot;Post Request with Authorizat...)">runScenario("Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorizat...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with invalid contact number&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the new user creation with invalid contact number", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with all field values to an invalid endpoint&quot;, &quot;Post Request with ...)">runScenario("Validating the new user creation with all field values to an invalid endpoint", "Post Request with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of missing user contact number field&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of missing user contact number field", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of duplicate user email id&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of duplicate user email id", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of user last name field with empty string&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of user last name field with empty string", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of missing user user email id field&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of missing user user email id field", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the user creation with invalid state in userAddress&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the user creation with invalid state in userAddress", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the  user updation with invalid user email id&quot;, &quot;Put Request with Authorization&quot;)">runScenario("Validating the  user updation with invalid user email id", "Put Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the user creation with invalid state in userAddress&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validating the user creation with invalid state in userAddress", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User ID.&quot;, &quot;Get Request with ...)">runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User ID.&quot;, &quot;Get Request with ...)">runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of user First name field with empty string&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of user First name field with empty string", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the user creation with invalid country in userAddress&quot;, &quot;Post Request with Authorization...)">runScenario("Validating the user creation with invalid country in userAddress", "Post Request with Authorization...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of email id field with empty string&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of email id field with empty string", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of duplicate user email id while updating the record&quot;, &quot;Put Request with Authorization&quot;)">runScenario("Validation of duplicate user email id while updating the record", "Put Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User FirstName.&quot;, &quot;Get Reques...)">runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the new user creation with all field values with invalid JSON&quot;, &quot;Post Request with Autho...)">runScenario("Validating the new user creation with all field values with invalid JSON", "Post Request with Autho...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User FirstName.&quot;, &quot;Get Reques...)">runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of duplicate user email id&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of duplicate user email id", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating the  user updation with invalid user email id&quot;, &quot;Put Request with Authorization&quot;)">runScenario("Validating the  user updation with invalid user email id", "Put Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-CucumberSuite" title="runners.UserDeletionRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validation of duplicate user contact number&quot;, &quot;Post Request with Authorization&quot;)">runScenario("Validation of duplicate user contact number", "Post Request with Authorization")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-CucumberSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-CucumberSuite" class="panel CucumberSuite">
+          <div class="suite-CucumberSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.validRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the updation of user with all field values&quot;, &quot;Put Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the updation of user with all field values", "Put Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the updation of user with all field values","Put Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at stepdefinitions.PutRequestStep.the_response_status_code_should_be_and_the_response_body_should_have_auto_generated_user_id_address_id_creation_time_and_last_mod_time_field(PutRequestStep.java:83)
+	at ✽.The response status code should be 200 and the response body should have auto-generated user id, address id , creation_time and last_mod_time field.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:11)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if the User is able to retrieve a user by User First Name with Authorization.&quot;, &quot;Get Request ...)">
+                  </a> <!-- runScenario("Check if the User is able to retrieve a user by User First Name with Authorization.", "Get Request ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if the User is able to retrieve a user by User First Name with Authorization.","Get Request with Authorization")</span>
+                  <div class="stack-trace">io.cucumber.core.exception.CucumberException: Step [User Creates a GET request  with a valid User First Name] is defined with 1 parameters at &apos;stepdefinitions.GetRequestwithAuth.user_creates_a_get_request_with_a_valid_user_first_name_as(java.lang.String)&apos;.
+However, the gherkin step has 0 arguments.
+Step text: User Creates a GET request  with a valid User First Name
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.arityMismatch(PickleStepDefinitionMatch.java:82)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:41)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-failed -->
+          <div class="suite-CucumberSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runners.UserDeletionRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with only mandatory field values&quot;, &quot;Post Request with Authorizatio...)">
+                  </a> <!-- runScenario("Validating the new user creation with only mandatory field values", "Post Request with Authorizatio...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with only mandatory field values","Post Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [500] but found [201]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_a_response_body_should_have_auto_generated_user_id_address_id_creation_time_and_last_mod_time_field(PostRequestStep.java:111)
+	at ✽.The response status code should be 201. A response body should have auto-generated user id, address id , creation_time and last_mod_time field.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:31)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of missing user last name field&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of missing user last name field", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of missing user last name field","Post Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:81)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of missing user First name field&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of missing user First name field", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of missing user First name field","Post Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:51)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with invalid user last name&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with invalid user last name", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with invalid user last name","Post Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:71)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with only mandatory field values&quot;, &quot;Post Request with Authorizatio...)">
+                  </a> <!-- runScenario("Validating the new user creation with only mandatory field values", "Post Request with Authorizatio...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with only mandatory field values","Post Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [500] but found [201]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_a_response_body_should_have_auto_generated_user_id_address_id_creation_time_and_last_mod_time_field(PostRequestStep.java:111)
+	at ✽.The response status code should be 201. A response body should have auto-generated user id, address id , creation_time and last_mod_time field.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:31)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if the User is able to delete a user by User First Name with Authorization.&quot;, &quot;Get Request wi...)">
+                  </a> <!-- runScenario("Check if the User is able to delete a user by User First Name with Authorization.", "Get Request wi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if the User is able to delete a user by User First Name with Authorization.","Get Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [404] but found [200]
+	at stepdefinitions.DeleteRequestStep.the_delete_response_should_contain_a_status_code_as(DeleteRequestStep.java:84)
+	at ✽.The delete response should contain a status code as 200.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/deleteRequest.feature:31)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of missing user First name field&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of missing user First name field", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of missing user First name field","Post Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:51)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with invalid user last name&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with invalid user last name", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with invalid user last name","Post Request with Authorization")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:71)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-failed -->
+          <div class="suite-CucumberSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.validRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check  If the get request is able to retrieve  a user by an empty User ID.&quot;, &quot;Get Request with Auth...)">
+                  </a> <!-- runScenario("Check  If the get request is able to retrieve  a user by an empty User ID.", "Get Request with Auth...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check  If the get request is able to retrieve  a user by an empty User ID.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if the User is able to retrieve a user by User ID with Authorization.&quot;, &quot;Get Request with Aut...)">
+                  </a> <!-- runScenario("Check if the User is able to retrieve a user by User ID with Authorization.", "Get Request with Aut...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if the User is able to retrieve a user by User ID with Authorization.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Getting all users list without an endpoint&quot;, &quot;Get Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Getting all users list without an endpoint", "Get Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Getting all users list without an endpoint","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-passed -->
+          <div class="suite-CucumberSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.NoAuthScenarios</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if the User is able to retrieve a user by User First Name without Authorization.&quot;, &quot;Checking ...)">
+                  </a> <!-- runScenario("Check if the User is able to retrieve a user by User First Name without Authorization.", "Checking ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if the User is able to retrieve a user by User First Name without Authorization.","Checking different requests without Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Getting all users list without Authorization&quot;, &quot;Checking different requests without Authorization&quot;)">
+                  </a> <!-- runScenario("Getting all users list without Authorization", "Checking different requests without Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Getting all users list without Authorization","Checking different requests without Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with all field values without Authorization&quot;, &quot;Checking different ...)">
+                  </a> <!-- runScenario("Validating the new user creation with all field values without Authorization", "Checking different ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with all field values without Authorization","Checking different requests without Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if the User is able to retrieve a user by User ID without Authorization&quot;, &quot;Checking different...)">
+                  </a> <!-- runScenario("Check if the User is able to retrieve a user by User ID without Authorization", "Checking different...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if the User is able to retrieve a user by User ID without Authorization","Checking different requests without Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-passed -->
+          <div class="suite-CucumberSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.UserCreationRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with all field values&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with all field values", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with all field values","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the user creation with valid zipcode in userAddress&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the user creation with valid zipcode in userAddress", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the user creation with valid zipcode in userAddress","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-passed -->
+          <div class="suite-CucumberSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.UserDeletionRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User FirstName.&quot;, &quot;Get Reques...)">
+                  </a> <!-- runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check  If the get request is able to retrieve  a user with an invalid User FirstName.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User ID.&quot;, &quot;Get Request with ...)">
+                  </a> <!-- runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check  If the get request is able to retrieve  a user with an invalid User ID.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if the User is able to delete a user by chaining User ID with Authorization.&quot;, &quot;Get Request w...)">
+                  </a> <!-- runScenario("Check if the User is able to delete a user by chaining User ID with Authorization.", "Get Request w...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if the User is able to delete a user by chaining User ID with Authorization.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of duplicate user contact number while updating the record&quot;, &quot;Put Request with Authoriza...)">
+                  </a> <!-- runScenario("Validation of duplicate user contact number while updating the record", "Put Request with Authoriza...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of duplicate user contact number while updating the record","Put Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of contact number field with empty string&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of contact number field with empty string", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of contact number field with empty string","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the user creation with invalid country in userAddress&quot;, &quot;Post Request with Authorization...)">
+                  </a> <!-- runScenario("Validating the user creation with invalid country in userAddress", "Post Request with Authorization...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the user creation with invalid country in userAddress","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of user First name field with empty string&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of user First name field with empty string", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of user First name field with empty string","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with invalid user first name&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with invalid user first name", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with invalid user first name","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of missing user user email id field&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of missing user user email id field", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of missing user user email id field","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of email id field with empty string&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of email id field with empty string", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of email id field with empty string","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the user creation with invalid plotNumber in userAddress&quot;, &quot;Post Request with Authorizat...)">
+                  </a> <!-- runScenario("Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorizat...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the user creation with invalid plotNumber in userAddress","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with all field values to an invalid endpoint&quot;, &quot;Post Request with ...)">
+                  </a> <!-- runScenario("Validating the new user creation with all field values to an invalid endpoint", "Post Request with ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with all field values to an invalid endpoint","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with invalid user email id&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with invalid user email id", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with invalid user email id","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of duplicate user email id while updating the record&quot;, &quot;Put Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of duplicate user email id while updating the record", "Put Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of duplicate user email id while updating the record","Put Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check if the User is able to delete a user by User First Name with Authorization.&quot;, &quot;Get Request wi...)">
+                  </a> <!-- runScenario("Check if the User is able to delete a user by User First Name with Authorization.", "Get Request wi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check if the User is able to delete a user by User First Name with Authorization.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with invalid user first name&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with invalid user first name", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with invalid user first name","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with invalid user email id&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with invalid user email id", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with invalid user email id","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with all field values with invalid JSON&quot;, &quot;Post Request with Autho...)">
+                  </a> <!-- runScenario("Validating the new user creation with all field values with invalid JSON", "Post Request with Autho...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with all field values with invalid JSON","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;&quot;, &quot;Get Request with Authorization&quot;)">
+                  </a> <!-- runScenario("", "Get Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the user creation with invalid plotNumber in userAddress&quot;, &quot;Post Request with Authorizat...)">
+                  </a> <!-- runScenario("Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorizat...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the user creation with invalid plotNumber in userAddress","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with invalid contact number&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the new user creation with invalid contact number", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with invalid contact number","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with all field values to an invalid endpoint&quot;, &quot;Post Request with ...)">
+                  </a> <!-- runScenario("Validating the new user creation with all field values to an invalid endpoint", "Post Request with ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with all field values to an invalid endpoint","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of missing user contact number field&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of missing user contact number field", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of missing user contact number field","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of duplicate user email id&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of duplicate user email id", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of duplicate user email id","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of user last name field with empty string&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of user last name field with empty string", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of user last name field with empty string","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of missing user user email id field&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of missing user user email id field", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of missing user user email id field","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the user creation with invalid state in userAddress&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the user creation with invalid state in userAddress", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the user creation with invalid state in userAddress","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the  user updation with invalid user email id&quot;, &quot;Put Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the  user updation with invalid user email id", "Put Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the  user updation with invalid user email id","Put Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the user creation with invalid state in userAddress&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the user creation with invalid state in userAddress", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the user creation with invalid state in userAddress","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User ID.&quot;, &quot;Get Request with ...)">
+                  </a> <!-- runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check  If the get request is able to retrieve  a user with an invalid User ID.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User ID.&quot;, &quot;Get Request with ...)">
+                  </a> <!-- runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check  If the get request is able to retrieve  a user with an invalid User ID.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of user First name field with empty string&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of user First name field with empty string", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of user First name field with empty string","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the user creation with invalid country in userAddress&quot;, &quot;Post Request with Authorization...)">
+                  </a> <!-- runScenario("Validating the user creation with invalid country in userAddress", "Post Request with Authorization...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the user creation with invalid country in userAddress","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of email id field with empty string&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of email id field with empty string", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of email id field with empty string","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of duplicate user email id while updating the record&quot;, &quot;Put Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of duplicate user email id while updating the record", "Put Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of duplicate user email id while updating the record","Put Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User FirstName.&quot;, &quot;Get Reques...)">
+                  </a> <!-- runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check  If the get request is able to retrieve  a user with an invalid User FirstName.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the new user creation with all field values with invalid JSON&quot;, &quot;Post Request with Autho...)">
+                  </a> <!-- runScenario("Validating the new user creation with all field values with invalid JSON", "Post Request with Autho...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the new user creation with all field values with invalid JSON","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Check  If the get request is able to retrieve  a user with an invalid User FirstName.&quot;, &quot;Get Reques...)">
+                  </a> <!-- runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Check  If the get request is able to retrieve  a user with an invalid User FirstName.","Get Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of duplicate user email id&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of duplicate user email id", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of duplicate user email id","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating the  user updation with invalid user email id&quot;, &quot;Put Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validating the  user updation with invalid user email id", "Put Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating the  user updation with invalid user email id","Put Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validation of duplicate user contact number&quot;, &quot;Post Request with Authorization&quot;)">
+                  </a> <!-- runScenario("Validation of duplicate user contact number", "Post Request with Authorization") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validation of duplicate user contact number","Post Request with Authorization")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-CucumberSuite-class-passed -->
+        </div> <!-- panel CucumberSuite -->
+        <div panel-name="test-xml-CucumberSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\SMILE\selenium_course\RestAssuredAutomation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;CucumberSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;NoAuthTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.NoAuthScenarios&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- NoAuthTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UserCreationTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.UserCreationRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UserCreationTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ValidTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.validRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ValidTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;UserDeletionTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;runners.UserDeletionRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- UserDeletionTest --&gt;
+&lt;/suite&gt; &lt;!-- CucumberSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-CucumberSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for CucumberSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">NoAuthTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">UserCreationTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ValidTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">UserDeletionTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-CucumberSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for CucumberSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-CucumberSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for CucumberSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_CucumberSuite');
+function tableData_CucumberSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(60);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'runners.NoAuthScenarios')
+data.setCell(0, 3, 1924);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'runners.UserCreationRunner')
+data.setCell(1, 3, 907);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.NoAuthScenarios')
+data.setCell(2, 3, 780);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'runners.UserCreationRunner')
+data.setCell(3, 3, 390);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'runners.UserDeletionRunner')
+data.setCell(4, 3, 366);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'runners.UserDeletionRunner')
+data.setCell(5, 3, 354);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'runners.UserDeletionRunner')
+data.setCell(6, 3, 336);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'runners.UserDeletionRunner')
+data.setCell(7, 3, 326);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'runners.validRunner')
+data.setCell(8, 3, 312);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'runners.UserDeletionRunner')
+data.setCell(9, 3, 312);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'runners.UserDeletionRunner')
+data.setCell(10, 3, 304);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'runners.UserDeletionRunner')
+data.setCell(11, 3, 300);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'runners.UserDeletionRunner')
+data.setCell(12, 3, 300);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'runners.UserDeletionRunner')
+data.setCell(13, 3, 300);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'runners.UserDeletionRunner')
+data.setCell(14, 3, 297);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'runners.UserDeletionRunner')
+data.setCell(15, 3, 294);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'runners.UserDeletionRunner')
+data.setCell(16, 3, 292);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'runners.UserDeletionRunner')
+data.setCell(17, 3, 290);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'runners.UserDeletionRunner')
+data.setCell(18, 3, 288);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'runners.UserDeletionRunner')
+data.setCell(19, 3, 288);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'runners.UserDeletionRunner')
+data.setCell(20, 3, 287);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'runners.UserDeletionRunner')
+data.setCell(21, 3, 287);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'runners.validRunner')
+data.setCell(22, 3, 285);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'runners.UserDeletionRunner')
+data.setCell(23, 3, 284);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'runners.validRunner')
+data.setCell(24, 3, 283);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'runners.UserDeletionRunner')
+data.setCell(25, 3, 283);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'runners.UserDeletionRunner')
+data.setCell(26, 3, 283);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'runners.UserDeletionRunner')
+data.setCell(27, 3, 282);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'runners.UserDeletionRunner')
+data.setCell(28, 3, 281);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'runners.UserDeletionRunner')
+data.setCell(29, 3, 281);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'runners.UserDeletionRunner')
+data.setCell(30, 3, 280);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'runners.UserDeletionRunner')
+data.setCell(31, 3, 279);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'runners.UserDeletionRunner')
+data.setCell(32, 3, 278);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'runners.UserDeletionRunner')
+data.setCell(33, 3, 276);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'runners.UserDeletionRunner')
+data.setCell(34, 3, 275);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'runners.UserDeletionRunner')
+data.setCell(35, 3, 274);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'runners.UserDeletionRunner')
+data.setCell(36, 3, 273);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'runners.UserDeletionRunner')
+data.setCell(37, 3, 272);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'runners.UserDeletionRunner')
+data.setCell(38, 3, 272);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'runners.UserDeletionRunner')
+data.setCell(39, 3, 272);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'runners.UserDeletionRunner')
+data.setCell(40, 3, 271);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'runners.validRunner')
+data.setCell(41, 3, 269);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'runners.UserDeletionRunner')
+data.setCell(42, 3, 269);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'runners.UserDeletionRunner')
+data.setCell(43, 3, 268);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'runScenario')
+data.setCell(44, 2, 'runners.UserDeletionRunner')
+data.setCell(44, 3, 266);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'runScenario')
+data.setCell(45, 2, 'runners.UserDeletionRunner')
+data.setCell(45, 3, 266);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'runScenario')
+data.setCell(46, 2, 'runners.UserDeletionRunner')
+data.setCell(46, 3, 265);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'runScenario')
+data.setCell(47, 2, 'runners.UserDeletionRunner')
+data.setCell(47, 3, 264);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'runScenario')
+data.setCell(48, 2, 'runners.UserDeletionRunner')
+data.setCell(48, 3, 264);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'runScenario')
+data.setCell(49, 2, 'runners.UserDeletionRunner')
+data.setCell(49, 3, 262);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'runScenario')
+data.setCell(50, 2, 'runners.UserDeletionRunner')
+data.setCell(50, 3, 261);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'runScenario')
+data.setCell(51, 2, 'runners.UserDeletionRunner')
+data.setCell(51, 3, 256);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'runScenario')
+data.setCell(52, 2, 'runners.UserDeletionRunner')
+data.setCell(52, 3, 255);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'runScenario')
+data.setCell(53, 2, 'runners.UserDeletionRunner')
+data.setCell(53, 3, 255);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'runScenario')
+data.setCell(54, 2, 'runners.UserDeletionRunner')
+data.setCell(54, 3, 254);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'runScenario')
+data.setCell(55, 2, 'runners.UserDeletionRunner')
+data.setCell(55, 3, 252);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'runScenario')
+data.setCell(56, 2, 'runners.UserDeletionRunner')
+data.setCell(56, 3, 249);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'runScenario')
+data.setCell(57, 2, 'runners.NoAuthScenarios')
+data.setCell(57, 3, 245);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'runScenario')
+data.setCell(58, 2, 'runners.NoAuthScenarios')
+data.setCell(58, 3, 233);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'runScenario')
+data.setCell(59, 2, 'runners.validRunner')
+data.setCell(59, 3, 13);
+window.suiteTableData['CucumberSuite']= { tableData: data, tableDiv: 'times-div-CucumberSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <div id="times-div-CucumberSuite">
+              </div> <!-- times-div-CucumberSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-CucumberSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for CucumberSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-CucumberSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-CucumberSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.NoAuthScenarios</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@2e096ac0)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Getting all users list without Authorization", "Checking different requests without Authorization")</span>
+                <span class="method-start">652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if the User is able to retrieve a user by User ID without Authorization", "Checking different...)</span>
+                <span class="method-start">2581 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if the User is able to retrieve a user by User First Name without Authorization.", "Checking ...)</span>
+                <span class="method-start">2832 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with all field values without Authorization", "Checking different ...)</span>
+                <span class="method-start">3067 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">3852 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.UserCreationRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@d7c00de)</span>
+                <span class="method-start">3901 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the user creation with valid zipcode in userAddress", "Post Request with Authorization")</span>
+                <span class="method-start">3965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with all field values", "Post Request with Authorization")</span>
+                <span class="method-start">4873 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">5265 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.validRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@11fa11b2)</span>
+                <span class="method-start">5284 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Getting all users list without an endpoint", "Get Request with Authorization")</span>
+                <span class="method-start">5334 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if the User is able to retrieve a user by User ID with Authorization.", "Get Request with Aut...)</span>
+                <span class="method-start">5604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check  If the get request is able to retrieve  a user by an empty User ID.", "Get Request with Auth...)</span>
+                <span class="method-start">5889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if the User is able to retrieve a user by User First Name with Authorization.", "Get Request ...)</span>
+                <span class="method-start">6202 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validating the updation of user with all field values", "Put Request with Authorization")</span>
+                <span class="method-start">6217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">6504 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">runners.UserDeletionRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@29ddaa8e)</span>
+                <span class="method-start">6533 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if the User is able to delete a user by chaining User ID with Authorization.", "Get Request w...)</span>
+                <span class="method-start">6583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check if the User is able to delete a user by User First Name with Authorization.", "Get Request wi...)</span>
+                <span class="method-start">6886 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Check if the User is able to delete a user by User First Name with Authorization.", "Get Request wi...)</span>
+                <span class="method-start">7169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...)</span>
+                <span class="method-start">7449 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...)</span>
+                <span class="method-start">7723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check  If the get request is able to retrieve  a user with an invalid User ID.", "Get Request with ...)</span>
+                <span class="method-start">8006 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("", "Get Request with Authorization")</span>
+                <span class="method-start">8291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...)</span>
+                <span class="method-start">8659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...)</span>
+                <span class="method-start">8953 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Check  If the get request is able to retrieve  a user with an invalid User FirstName.", "Get Reques...)</span>
+                <span class="method-start">9266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with all field values to an invalid endpoint", "Post Request with ...)</span>
+                <span class="method-start">9557 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with all field values to an invalid endpoint", "Post Request with ...)</span>
+                <span class="method-start">9834 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with all field values with invalid JSON", "Post Request with Autho...)</span>
+                <span class="method-start">10163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with all field values with invalid JSON", "Post Request with Autho...)</span>
+                <span class="method-start">10466 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validating the new user creation with only mandatory field values", "Post Request with Authorizatio...)</span>
+                <span class="method-start">10774 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validating the new user creation with only mandatory field values", "Post Request with Authorizatio...)</span>
+                <span class="method-start">11114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with invalid user first name", "Post Request with Authorization")</span>
+                <span class="method-start">11398 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with invalid user first name", "Post Request with Authorization")</span>
+                <span class="method-start">11682 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validation of missing user First name field", "Post Request with Authorization")</span>
+                <span class="method-start">11964 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validation of missing user First name field", "Post Request with Authorization")</span>
+                <span class="method-start">12242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of user First name field with empty string", "Post Request with Authorization")</span>
+                <span class="method-start">12531 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of user First name field with empty string", "Post Request with Authorization")</span>
+                <span class="method-start">12798 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validating the new user creation with invalid user last name", "Post Request with Authorization")</span>
+                <span class="method-start">13089 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validating the new user creation with invalid user last name", "Post Request with Authorization")</span>
+                <span class="method-start">13377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validation of missing user last name field", "Post Request with Authorization")</span>
+                <span class="method-start">13634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of user last name field with empty string", "Post Request with Authorization")</span>
+                <span class="method-start">13919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with invalid contact number", "Post Request with Authorization")</span>
+                <span class="method-start">14186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of missing user contact number field", "Post Request with Authorization")</span>
+                <span class="method-start">14459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of contact number field with empty string", "Post Request with Authorization")</span>
+                <span class="method-start">14814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of duplicate user contact number", "Post Request with Authorization")</span>
+                <span class="method-start">15088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with invalid user email id", "Post Request with Authorization")</span>
+                <span class="method-start">15351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the new user creation with invalid user email id", "Post Request with Authorization")</span>
+                <span class="method-start">15608 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of missing user user email id field", "Post Request with Authorization")</span>
+                <span class="method-start">15879 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of missing user user email id field", "Post Request with Authorization")</span>
+                <span class="method-start">16132 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of email id field with empty string", "Post Request with Authorization")</span>
+                <span class="method-start">16402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of email id field with empty string", "Post Request with Authorization")</span>
+                <span class="method-start">16658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of duplicate user email id", "Post Request with Authorization")</span>
+                <span class="method-start">16934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of duplicate user email id", "Post Request with Authorization")</span>
+                <span class="method-start">17184 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorizat...)</span>
+                <span class="method-start">17452 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorizat...)</span>
+                <span class="method-start">17717 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the user creation with invalid state in userAddress", "Post Request with Authorization")</span>
+                <span class="method-start">18012 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the user creation with invalid state in userAddress", "Post Request with Authorization")</span>
+                <span class="method-start">18286 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the user creation with invalid country in userAddress", "Post Request with Authorization...)</span>
+                <span class="method-start">18587 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the user creation with invalid country in userAddress", "Post Request with Authorization...)</span>
+                <span class="method-start">18876 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of duplicate user contact number while updating the record", "Put Request with Authoriza...)</span>
+                <span class="method-start">19174 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the  user updation with invalid user email id", "Put Request with Authorization")</span>
+                <span class="method-start">19440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validating the  user updation with invalid user email id", "Put Request with Authorization")</span>
+                <span class="method-start">19696 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of duplicate user email id while updating the record", "Put Request with Authorization")</span>
+                <span class="method-start">19959 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validation of duplicate user email id while updating the record", "Put Request with Authorization")</span>
+                <span class="method-start">20239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">20514 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

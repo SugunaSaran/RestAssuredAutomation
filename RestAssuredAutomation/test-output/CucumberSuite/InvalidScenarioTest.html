@@ -1,0 +1,694 @@
+<html>
+<head>
+<title>TestNG:  InvalidScenarioTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>InvalidScenarioTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/27/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Feb 09 18:58:33 EST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10646 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of missing user First name field", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:51)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2025508923", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2025508923'><pre>java.lang.AssertionError: expected [500] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:51)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of duplicate user email id", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;User already exist with same email id&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:168)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1546957042", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1546957042'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;User already exist with same email id&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:168)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid country in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [Country should contain alphabet characters only] but found [country should contain alphabet characters only.]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:336)
+	at ✽.The response status code should be 400. The message should be &quot;country should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:198)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1482874276", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1482874276'><pre>java.lang.AssertionError: expected [Country should contain alphabet characters only] but found [country should contain alphabet characters only.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:336)
+	at ✽.The response status code should be 400. The message should be &quot;country should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:198)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;plot number should contain alphanumeric values only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:178)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace522189848", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace522189848'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;plot number should contain alphanumeric values only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:178)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with invalid user last name", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:71)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace53752060", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace53752060'><pre>java.lang.AssertionError: expected [500] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:71)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with invalid user last name", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:71)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace987586071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace987586071'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:71)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of duplicate user contact number while updating the record", "Put Request with Authorization"</td>
+<td><div><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:19)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace792334135", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace792334135'><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:19)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of duplicate user email id", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;User already exist with same email id&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:168)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace884237024", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace884237024'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;User already exist with same email id&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:168)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of duplicate user email id while updating the record", "Put Request with Authorization"</td>
+<td><div><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:38)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1926138523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1926138523'><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:38)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of duplicate user email id while updating the record", "Put Request with Authorization"</td>
+<td><div><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:38)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1007717381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1007717381'><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:38)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of missing user last name field", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [500] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:81)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace239817939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace239817939'><pre>java.lang.AssertionError: expected [500] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:81)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the  user updation with invalid user email id", "Put Request with Authorization"</td>
+<td><div><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:28)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1865031664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1865031664'><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:28)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid country in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;country should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:198)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1652383641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1652383641'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;country should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:198)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of missing user First name field", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:51)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace785249576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace785249576'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:51)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of missing user user email id field", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:148)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2028630031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2028630031'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:148)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with only mandatory field values", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [500] but found [201]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_a_response_body_should_have_auto_generated_user_id_address_id_creation_time_and_last_mod_time_field(PostRequestStep.java:111)
+	at ✽.The response status code should be 201. A response body should have auto-generated user id, address id , creation_time and last_mod_time field.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:31)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1755588291", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1755588291'><pre>java.lang.AssertionError: expected [500] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_a_response_body_should_have_auto_generated_user_id_address_id_creation_time_and_last_mod_time_field(PostRequestStep.java:111)
+	at ✽.The response status code should be 201. A response body should have auto-generated user id, address id , creation_time and last_mod_time field.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:31)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid state in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [State should contain alphabet characters only] but found [state should contain alphabet characters only.]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:336)
+	at ✽.The response status code should be 400. The message should be &quot;state should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:188)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace805100699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace805100699'><pre>java.lang.AssertionError: expected [State should contain alphabet characters only] but found [state should contain alphabet characters only.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:336)
+	at ✽.The response status code should be 400. The message should be &quot;state should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:188)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid state in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;state should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:188)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878002425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace878002425'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;state should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:188)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of email id field with empty string", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;user email id is mandatory and should contains alphabets only&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:158)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1452056289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1452056289'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;user email id is mandatory and should contains alphabets only&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:158)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the  user updation with invalid user email id", "Put Request with Authorization"</td>
+<td><div><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:28)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1268591854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1268591854'><pre>java.lang.IllegalArgumentException: parameterValue cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:515)
+	at stepdefinitions.PutRequestStep.send_a_put_request_to_a_valid_endpoint(PutRequestStep.java:47)
+	at ✽.Send a put request to a valid endpoint(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/putRequest.feature:28)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of user First name field with empty string", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;user firstname is mandatory and should contains alphabets only&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:61)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace231256831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace231256831'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_the_message_is(PostRequestStep.java:164)
+	at ✽.The response status code should be 400. The message is &quot;user firstname is mandatory and should contains alphabets only&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:61)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid zipcode in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [201] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;zipcode should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:209)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace850520326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace850520326'><pre>java.lang.AssertionError: expected [201] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;zipcode should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:209)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with invalid user email id", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:137)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1261095698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261095698'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:137)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with invalid user first name", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:41)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1780290663", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780290663'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_not_found(PostRequestStep.java:65)
+	at ✽.The response status code should be 400(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:41)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with only mandatory field values", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [201]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_a_response_body_should_have_auto_generated_user_id_address_id_creation_time_and_last_mod_time_field(PostRequestStep.java:111)
+	at ✽.The response status code should be 201. A response body should have auto-generated user id, address id , creation_time and last_mod_time field.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:31)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace686840588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace686840588'><pre>java.lang.AssertionError: expected [409] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_a_response_body_should_have_auto_generated_user_id_address_id_creation_time_and_last_mod_time_field(PostRequestStep.java:111)
+	at ✽.The response status code should be 201. A response body should have auto-generated user id, address id , creation_time and last_mod_time field.(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:31)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid plotNumber in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [Plot number should contain alphaNumeric values only] but found [plot number should contain alphanumeric values only.]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:336)
+	at ✽.The response status code should be 400. The message should be &quot;plot number should contain alphanumeric values only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:178)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2085073144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2085073144'><pre>java.lang.AssertionError: expected [Plot number should contain alphaNumeric values only] but found [plot number should contain alphanumeric values only.]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:336)
+	at ✽.The response status code should be 400. The message should be &quot;plot number should contain alphanumeric values only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:178)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the user creation with invalid zipcode in userAddress", "Post Request with Authorization"</td>
+<td><div><pre>java.lang.AssertionError: expected [409] but found [400]
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;zipcode should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:209)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1344320927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1344320927'><pre>java.lang.AssertionError: expected [409] but found [400]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1439)
+	at stepdefinitions.PostRequestStep.the_response_status_code_should_be_bad_request_the_message_should_be(PostRequestStep.java:335)
+	at ✽.The response status code should be 400. The message should be &quot;zipcode should contain alphabet characters only.&quot;(file:///C:/Users/SMILE/selenium_course/RestAssuredAutomation/src/test/resources/features/postRequest.feature:209)
+</pre></div></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of user First name field with empty string", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of user last name field with empty string", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of email id field with empty string", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of missing user user email id field", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with all field values to an invalid endpoint", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of duplicate user contact number", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with all field values with invalid JSON", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with invalid contact number", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with invalid user first name", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of missing user contact number field", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with all field values with invalid JSON", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validation of contact number field with empty string", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with invalid user email id", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+<tr>
+<td title='runners.InvalidScenarioRunner.runScenario()'><b>runScenario</b><br>Test class: runners.InvalidScenarioRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating the new user creation with all field values to an invalid endpoint", "Post Request with Authorization"</td>
+<td></td>
+<td>0</td>
+<td>runners.InvalidScenarioRunner@43c1b556</td></tr>
+</table><p>
+</body>
+</html>
